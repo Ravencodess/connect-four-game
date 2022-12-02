@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 6px;
+}
+
+.hover-div{
+    display: grid;
+    place-items: center;
+    width: 430px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.board{
+    background-color: rgb(33, 33, 231);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    place-items: center;
+    width: 430px;
+    height: 350px;
+}
+
+.cell, .hover-cell{
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.back{
+    background-color: rgb(71, 63, 63);
+}
+
+.hover-cell{
+    border: none;
+}
+
+.red:hover, .show-red{
+    background-color: rgb(245, 35, 35);
+}
+.yellow:hover, .show-yellow{
+    background-color: rgb(240, 236, 24);
+}
+
